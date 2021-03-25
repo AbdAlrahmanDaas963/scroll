@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(48, 48, 66);
+    height: 1500px;
+}
+
+.move{
+    width: 500px;
+    transition: all 0.3s ease;
+    position: absolute;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.hehe,.hehe2{
+    color: yellow;
+    position: absolute;
+    top: 0px;
+}
+.hehe2{
+    left: 0px;
+}
+.move img{
+    
+    position: absolute;
+    animation-name: unset;
+    top: 0px;
+    transition: all 1s ease;
+}
+@keyframes balll
+{
+    
+    /*0%   { top: 10px;}
+    25%  { top: 20px;}
+    50%  { top: 30px;}
+    75%  { top: 20px;}
+    100% { top: 10px;}*/
+    0%   { top: 0px;}
+    50% {top: 30px;}
+    100% { top: 0px;}
+}
+@keyframes balll2
+{
+    /*0%   { top: -10px;}
+    25%  { top: -20px;}
+    50%  { top: -30px;}
+    75%  { top: -20px;}
+    100% { top: -10px;}*/
+
+    0%   { top: 0px;}
+    50% {top: -30px;}
+    100% { top: 0px;}
+}
