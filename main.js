@@ -1,5 +1,5 @@
 console.log("subaru");
-let div=document.querySelector("img");
+let joystick=document.querySelector("img");
 let body=document.querySelector("body");
 let x=0;
 let y=0;
@@ -8,8 +8,7 @@ function joy(){
     
     
 
-    div.style.animationDuration="1s";
-    div.style.animationIterationCount="1";    
+ 
     // if(flip==true){
     //     div.style.animationName="balll";
     //     flip=false;
@@ -24,15 +23,18 @@ function joy(){
     
     
     window.onscroll = function(e) {
-        console.log(this.oldScroll > this.scrollY);
         if(this.oldScroll > this.scrollY){
-            
-            //div.style.transform=("translateY(20px)");
-            div.style.animationName="balll";
+            joystick.style.transform="translateY(-20px)";
+            console.log("before up");
+            setTimeout(function(){
+                joystick.style.transform="translateY(20px)";
+                console.log("up");
+            }, 1000);
         }else{
-            
-            //div.style.transform=("translateY(-20px)");
-            div.style.animationName="balll2";
+            console.log("before down");
+            setTimeout(function(){
+                console.log("down");
+            }, 1000);
         }
         this.oldScroll = this.scrollY;
     }
